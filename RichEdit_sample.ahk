@@ -320,7 +320,7 @@ return
 
 TooltipAndRemove(P_tooltip,P_Time) {
 tooltip %P_tooltip%
-SetTimer( "RemoveToolTip", -%P_Time%)
+SetTimer( "RemoveToolTip", -P_Time)
 }
 
 SetTimer(P_Label,P_Time) {
