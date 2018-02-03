@@ -216,7 +216,7 @@ global
 	GuiControlGet, RE, Pos, % RE2.HWND
 	RE2.SetBkgndColor(BackColor)
 	; RE2.SetEventMask(["SELCHANGE"])
-	RE2.SetEventMask(["SELCHANGE","LINK","DROPFILES","OBJECTPOSITIONS"])
+	RE2.SetEventMask(["SELCHANGE","LINK","DROPFILES"])
 	RE2.AutoURL(1)
 	Gui, Font
 	; The rest
@@ -270,7 +270,7 @@ If (A_GuiEvent = "N") {
 	; sleep 1000
 	; }
 	If (Msg = 0X70a) { ; EN_OBJECTPOSITIONS
-	msgbox object position
+	; msgbox object position
 	}
 	Else If (Msg = 0x0702) { ; EN_SELCHANGE
 
